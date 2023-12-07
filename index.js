@@ -52,12 +52,12 @@ async function main() {
             {
                 role: "user",
                 content: [
-                    { type: "text", text: "There is a coin placed under the first red bull can. The cans are then shuffled. Based on the ordered movements, which can has the coin underneath it at the end? Hint: there are 3 moves made in total." },
+                    { type: "text", text: "There is a coin placed under the first red bull can. There are 3 red bull cans in total. The cans are shuffled. Based on the movements, guess which can has the coin underneath it at the end. Hint: there are 3 moves made in total. Do not say that you do not know the answer. The images are in order. List what you think could have happened in each of the 3 steps." },
                     ...imageUrls,
                 ],
             },
         ],
-        max_tokens: 1000
+        max_tokens: 4096
     });
     console.log(response.choices[0]);
 }

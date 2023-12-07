@@ -1,7 +1,7 @@
 import ffmpeg from 'fluent-ffmpeg';
 import fs from 'fs';
 
-function extractFrames(videoPath, outputFolder, frameRate = 8) {
+function extractFrames(videoPath, outputFolder, frameRate = 4) {
     ffmpeg(videoPath)
         .on('end', function () {
             console.log('Frames extraction completed.');
@@ -14,7 +14,7 @@ function extractFrames(videoPath, outputFolder, frameRate = 8) {
         .run();
 }
 
-const videoPath = './video/cupdemo.mp4'; // Path to your video file
+const videoPath = './video/cupdemo_phone.mp4'; // Path to your video file
 const outputFolder = './images'; // Folder where images will be saved
 
 
