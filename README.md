@@ -1,7 +1,9 @@
 Recreating the recent Google Gemini Demo using OpenAI's GPT-4V model.
 
+## Setup
+
 - First step is to split your video up into images using the script splitVideoIntoImages.js
-- Second step is to run index.js. This will convert all the images sotres /images into base64 and send them to the GPT-4V model.
+- Second step is to run index.js. This will convert all the images stored in /images into base64 format and send them to the OpenAI GPT-4V model.
 - Be sure to add your open ai api key in an .env file.
 
 ## Results
